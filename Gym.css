@@ -1,0 +1,1709 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  background-color:rgb(23, 23, 23) ;
+}
+html{
+  scroll-behavior: smooth;
+}
+section{
+  width: 100%;
+  height: 100vh;
+}
+section nav{
+display:  flex;
+justify-content: space-around;
+align-items: center;
+position: fixed;
+background-color:rgb(23, 23, 23);
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+z-index: 1000;
+left: 0;
+right: 0;
+}
+section nav .Dropdown i{
+  position: relative;
+  right: 160px;
+  font-size: 20px;
+  color: white;
+}
+section nav .Dropdown i:hover{
+  color: rgb(173, 99, 13);
+}
+
+section nav .Logo img{
+  width: 130px;
+  height: auto;
+}
+section nav ul li{
+  margin: 10px;
+  position: relative;
+  right: 350px;
+  display: inline-block;
+  list-style: none;
+}
+section nav ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+section nav ul i{
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+section nav ul i:hover{
+color: rgb(173, 99, 13);
+}
+section nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: rgb(173, 99, 13);
+  display: block;
+  transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+  width: 100%;
+}
+.Main{
+position: relative;
+top: 200px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.Main_Text{
+  bottom: 90px;
+  position: relative;
+  right: 110px;
+}
+.Main_Text h1{
+font-size: 90px;
+font-family: Calibri;
+color: rgb(173, 99, 13);
+}
+.Main_Text h1 span{
+  font-family: mv boli;
+  color: white;
+}
+.Main_Text p{
+  margin-top: 30px;
+  width: 900px;
+  font-size: 25px;
+  color: white;
+  font-family: calibri;
+}
+
+.Main_Text .Main_Button{
+  background-color: rgb(173, 99, 13);
+  width: 190px;
+  position: relative;
+  top: 30px;
+  padding: 12px;
+  border-radius: 25px;
+}
+.Main_Text .Main_Button a{
+  margin-left: 2px;
+  font-size: 18px;
+  font-family: sans-serif;
+ text-decoration: none;
+ color: white;
+ margin-right: 5px;
+}
+.Main_Text .Main_Button i{
+  color: rgb(23, 23, 23);
+  font-size: 18px;
+  transition: 0.3s;
+}
+.Main_Text .Main_Button:hover i{
+  transform: translateX(7px);
+}
+.Main .Main_image img{
+  bottom: 60px;
+  left: 40px;
+  position: relative;
+  width: 700px;
+  margin-right: 200px;
+}
+.About{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.About_Text{
+  bottom: 5px;
+  position: relative;
+  left: 30px;
+}
+.About .About_Text h1{
+  font-size: 70px;
+  color: rgb(173, 99, 13);
+  font-family: calibri;
+}
+.About .About_Text h1 span{
+  color:  white;
+  font-family: mv boli;
+}
+.About .About_Text h3{
+  font-size: 40px;
+  color: rgb(173, 99, 13);
+  font-family: calibri;
+  margin-bottom: 10px;
+}
+.About .About_Text p{
+  margin-top: 30px;
+  width: 800px;
+  font-size: 25px;
+  color: white;
+  font-family: calibri;
+}
+.About .About_Text .About_Button{
+  background-color: rgb(173, 99, 13);
+  width: 150px;
+  border-radius: 25px;
+  position: relative;
+  top: 30px;
+  padding: 12px;
+}
+.About .About_Text .About_Button a{
+  margin-left: 2px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-right: 7px;
+}
+.About .About_Text .About_Button i{
+  color: rgb(23, 23, 23);
+  font-size: 18px;
+  transition: 0.3s;
+}
+.About .About_Text .About_Button:hover i{
+  transform: translateX(7px);
+}
+.About .About_Image img{
+  top: 40px;
+  position: relative;
+  right: 50px;
+  width: 600px;
+}
+.Pricing{
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.Pricing_Card{
+  background-color: rgb(26, 26, 26);
+  top: 130px;
+  position: relative;
+  left: 50px;
+  height: 700px;
+  width: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 0;
+  transition: 0.3s;
+}
+.Pricing_Card .Pricing_Info {
+  position: relative; 
+  z-index: 10;
+}
+.Pricing_Card .Pricing_Info h2{
+  font-size: 40px;
+  color: rgb(173, 99, 13);
+  font-family: calibri;
+  margin-top: 20px;
+  text-align: center;
+}
+.Pricing_Card .Pricing_Info h3{
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  font-family: calibri;
+  margin-top: 15px;
+  text-align: center;
+}
+.Pricing_Info ul{
+  margin-top: 50px;
+}
+.Pricing_Card .Pricing_Info ul li{
+  position: relative;
+  top: 80px;
+  align-items: center;
+  font-size: 22px;
+  font-family: calibri;
+  color: white;
+  margin-top: 10px;
+  margin-left:215px ;
+  list-style-type: style circle;;
+}
+.Pricing_Card .Pricing_Info .Pricing_Button{
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+  left: 185px;
+  top: 270px;
+  width: 150px;
+  background-color: rgb(173, 99, 13);
+  padding: 12px;
+}
+.Pricing_Card .Pricing_Info .Pricing_Button a{
+  margin-left: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: calibri;
+  margin-right: 5px;
+}
+.Pricing_Card .Pricing_Info .Pricing_Button i{
+  transition: 0.3s;
+  color: white;
+}
+.Pricing_Card .Pricing_Info .Pricing_Button:hover i{
+  transform: translateX(7px);
+}
+.Pricing_Card:hover{
+  transform: scale(1.05);
+}
+.Pricing_Card1{
+  background-color: rgb(255, 255, 255);
+  top: 130px;
+  position: relative;
+  left: 50px;
+  height: 700px;
+  width: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 0;
+  transition: 0.3s;
+}
+.Pricing_Card1 .Pricing_Info {
+  position: relative; 
+  z-index: 10;
+}
+.Pricing_Card1 .Pricing_Info h2{
+  font-size: 40px;
+  color: rgb(173, 99, 13);
+  font-family: calibri;
+  margin-top: 20px;
+  text-align: center;
+}
+.Pricing_Card1 .Pricing_Info h3{
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  font-family: calibri;
+  margin-top: 15px;
+  text-align: center;
+}
+.Pricing_Info1 ul{
+  margin-top: 50px;
+}
+.Pricing_Card1 .Pricing_Info ul li{
+  position: relative;
+  top: 80px;
+  align-items: center;
+  font-size: 22px;
+  font-family: calibri;
+  color: white;
+  margin-top: 10px;
+  margin-left:215px ;
+  list-style-type: style circle;;
+}
+.Pricing_Card1 .Pricing_Info .Pricing_Button{
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+  left: 185px;
+  top: 270px;
+  width: 150px;
+  background-color: rgb(173, 99, 13);
+  padding: 12px;
+}
+.Pricing_Card1 .Pricing_Info .Pricing_Button a{
+  margin-left: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: calibri;
+  margin-right: 5px;
+}
+.Pricing_Card1 .Pricing_Info .Pricing_Button i{
+  transition: 0.3s;
+  color: white;
+}
+.Pricing_Card1 .Pricing_Info .Pricing_Button:hover i{
+  transform: translateX(7px);
+}
+.Pricing_Card1:hover{
+  transform: scale(1.05);
+}
+.Pricing_Card2{
+  background-color: rgb(35, 53, 63);
+  top: 130px;
+  position: relative;
+  left: 50px;
+  height: 700px;
+  width: 500px;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 0;
+  transition: 0.3s;
+}
+.Pricing_Card2 .Pricing_Info {
+  position: relative; 
+  z-index: 10;
+}
+.Pricing_Card2 .Pricing_Info h2{
+  font-size: 40px;
+  color: rgb(173, 99, 13);
+  font-family: calibri;
+  margin-top: 20px;
+  text-align: center;
+}
+.Pricing_Card2 .Pricing_Info h3{
+  font-style: italic;
+  color: white;
+  font-size: 30px;
+  font-family: calibri;
+  margin-top: 15px;
+  text-align: center;
+}
+.Pricing_Info ul{
+  margin-top: 50px;
+}
+.Pricing_Card2 .Pricing_Info ul li{
+  position: relative;
+  top: 80px;
+  align-items: center;
+  font-size: 22px;
+  font-family: calibri;
+  color: white;
+  margin-top: 10px;
+  margin-left:215px ;
+  list-style-type: style circle;;
+}
+.Pricing_Card2 .Pricing_Info .Pricing_Button{
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+  left: 185px;
+  top: 270px;
+  width: 150px;
+  background-color: rgb(173, 99, 13);
+  padding: 12px;
+}
+.Pricing_Card2 .Pricing_Info .Pricing_Button a{
+  margin-left: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: calibri;
+  margin-right: 5px;
+}
+.Pricing_Card2 .Pricing_Info .Pricing_Button i{
+  transition: 0.3s;
+  color: white;
+}
+.Pricing_Card2 .Pricing_Info .Pricing_Button:hover i{
+  transform: translateX(7px);
+}
+.Pricing_Card2:hover{
+  transform: scale(1.05);
+}
+.Pricing_Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(FitX_Logo_Claim_pos.png);
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
+.Membership{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+}
+.Membership_Image1 {
+  position: relative;
+  bottom: 200px;
+  left: 80px;
+}
+
+.Membership_Image1 img {
+  width: 650px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.Membership_Image1:hover img {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.Image1_Text {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  bottom: 135px;
+  left: 380px;
+  width: 500px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 40px;
+  font-family: calibri;
+  z-index: 1000;
+  
+}
+.Membership_Image1:hover .Image1_Text {
+  display: block;
+}
+.Membership_Image2 {
+  position: relative;
+  top:220px;
+  right: 570px;
+}
+.Membership_Image2 img {
+  width: 650px;
+  height: 340px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.Membership_Image2:hover img {
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.Image2_Text {
+  cursor: pointer;
+  width: 500px;
+  display: none;
+  position: absolute;
+  bottom: 135px; 
+  right: 300px;
+  transform: translateX(50%);
+  color: white;
+  font-size: 40px;
+  font-family: calibri;
+  z-index: 1000;
+}
+
+.Membership_Image2:hover .Image2_Text {
+  display: block;
+}
+.Membership_Text{
+  right: 440px;
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Membership_Text h1{
+  font-family: calibri;
+  width: 1000px;
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: rgb(173, 99, 13);
+}
+.Membership_Text h1 span{
+  color: white;
+  font-family: mv boli;
+}
+.Membership_Text input{
+  margin: 10px;
+  position: relative;
+  left: 150px;
+  width: 600px;
+  height: 50px;
+  background-color:rgb(173, 99, 13);
+  border: 1px solid rgb(75, 73, 73);
+  border-radius: 10px;
+  color: white;
+  outline: rgb(30, 30, 30);
+}
+.Name input{
+  width: 288px;
+}
+input::placeholder{
+  color: white;
+  margin-left: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+.Member_Button{
+  position: relative;
+  top: 20px;
+  left: 340px;
+  width: 250px;
+  background-color: rgb(173, 99, 13);
+  padding: 12px;
+  border-color: rgb(23, 23, 23);
+  border-radius: 20px;
+  text-align: center;
+}
+.Member_Button a{
+  text-decoration: none;
+  color: white;
+  margin-right: 8px;
+  font-size: 20px;
+}
+.Member_Button i{
+  font-size: 20px;
+  color: white;
+  transition: 0.3s;
+}
+.Member_Button:hover i{
+  transform: translateX(7px);
+}
+.Training{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.Training_Image img{
+  width: 850px;
+  height: 500px;
+  transform: scale(1.05);
+  transition: 0.3s;
+  border-radius: 20px;
+}
+.Training_Image img:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+.Training_Text{
+position: relative;
+top: -30px;
+}
+.Stars{
+  position: relative;
+  top: 15px;
+  left: 25px;
+  color: rgb(173, 99, 13);
+}
+.Training_Text h1{
+  color: rgb(173, 99, 13);
+font-size: 75px;
+font-family: calibri;
+}
+.Training_Text h1 span{
+  color:white;
+  font-family: mv boli;
+}
+.Training_Text p{
+  font-size: 25px;
+  color: white;
+  font-family: calibri;
+  width: 640px;
+}
+.Training_Text .Training_Button{
+  top: 30px;
+  position: relative;
+  width: 170px;
+  padding: 12px;
+  border-radius: 20px;
+  background-color: rgb(173, 99, 13);
+}
+.Training_Text .Training_Button a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.Training_Text .Training_Button i{
+  transition: 0.3s;
+}
+.Training_Text .Training_Button:hover i{
+  transform: translateX(7px);
+}
+.Stats{
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+.Stats i{
+  color: rgb(173, 99, 13);
+  margin-top: 3px;
+}
+.Stats p{
+ font-size: 15px;
+ margin-top: 3px;
+}
+.App{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.App_Image img{
+  position: relative;
+  right: 65px;
+  width: 1000px;
+}
+.App_Text{
+  position: relative;
+  right: 80px;
+}
+.App_Text h1{
+  font-size: 70px;
+  font-family: calibri;
+  color: rgb(173, 99, 13);
+}
+.App_Text h1 span{
+color: white;
+font-family: mv boli;
+}
+.App_Text p{
+  width: 800px;
+  color: white;
+  font-family: calibri;
+  font-size: 25px;
+}
+.App_Button{
+  position: relative;
+  top: 30px;
+  border-radius: 5px;
+  width: 170px;
+  padding: 12px;
+  background-color: rgb(173, 99, 13);
+}
+.App_Button a{
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 18px;
+}
+.App_Button i{
+  transition: 0.3s;
+}
+.App_Button:hover i{
+  transform: translateX(7px);
+}
+.Impressum{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(26, 26, 26);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.Über_Fitx{
+  font-size: 20px;
+  color: white;
+}
+.Über_Fitx p{
+  color: rgb(173, 99, 13);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Über_Fitx ul li{
+  list-style: none;
+  margin-top: 8px;
+}
+.Über_Fitx ul li:hover{
+  cursor: pointer;
+  color: rgb(173, 99, 13);
+}
+
+.Kooperationen{
+  position: relative;
+  bottom: 24px;
+  font-size: 20px;
+  color: white;
+}
+.Kooperationen p{
+  color: rgb(173, 99, 13);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Kooperationen ul li{
+  list-style: none;
+  margin-top: 8px;
+}
+.Kooperationen ul li:hover{
+  cursor: pointer;
+  color: rgb(173, 99, 13);
+}
+.Support{
+  position: relative;
+  bottom: 29px;
+  font-size: 20px;
+  color: white;
+}
+.Support p{
+  color: rgb(173, 99, 13);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Support ul li{
+  list-style: none;
+  margin-top: 8px;
+}
+.Support ul li:hover{
+  cursor: pointer;
+  color: rgb(173, 99, 13);
+}
+
+.HolApp img{
+  width: 200px;
+}
+.HolApp i{
+  position: relative;
+  right: 165px;
+  top: 20px;
+  color: rgb(173, 99, 13);
+  font-size: 20px;
+}
+.Reviews{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.Review_Card{
+  position: relative;
+  left: 15px;
+  top: 180px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 700px;
+  width: 440px;
+  transition: 0.3s;
+}
+.Reviews_Title{
+  position: relative;
+  top: 160px;
+  font-family: calibri;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(173, 99, 13);
+}
+.Review_Image img{
+  top: 20px;
+  height: 380px;
+  width: 420px;
+  position: relative;
+  left: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.Review_Card:hover img{
+  transform: scale(1.02);
+  opacity: 0.6;
+}
+.Review_Text p{
+  margin-left: 4px;
+  margin-top: 40px;
+width: 420px;
+font-size: 20px;
+font-family: calibri;
+color: white;
+}
+.Review_Text .fa-solid.fa-star{
+  position: relative;
+  top: 15px;
+  color:rgb(173, 99, 13);
+}
+.Review_Text .fa-solid.fa-star-half-stroke{
+  position: relative;
+  top: 15px;
+  color:rgb(173, 99, 13);
+}
+.Review_Text .fa-solid.fa-thumbs-up{
+  color:rgb(173, 99, 13);
+  position: relative;
+  bottom: 245px;
+  font-size: 20px;
+  right: 106px;
+  transition: 0.1s;
+}
+.Review_Text .fa-solid.fa-thumbs-up:hover{
+ transform: scale(1.07);
+}
+.Review_Text .fa-solid.fa-thumbs-down{
+  transition: 0.1s;
+  color:rgb(173, 99, 13);
+  position: relative;
+  bottom: 245px;
+  font-size: 20px;
+  right: 100px;
+}
+.Review_Text .fa-solid.fa-thumbs-down:hover{
+  transform: scale(1.07);
+ }
+ @media(max-width:412px) {
+  *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-color:rgb(23, 23, 23) ;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  section{
+    width: 100%;
+    height: 100vh;
+  }
+  section nav{
+  display:  flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color:rgb(23, 23, 23);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 2000;
+  left: 0;
+  right: 0;
+  }
+  section nav .Dropdown i{
+    position: relative;
+    right: 190px;
+    font-size: 15px;
+    color: white;
+  }
+  section nav .Dropdown i:hover{
+    color: rgb(173, 99, 13);
+  }
+  section nav .Logo img{
+    position: relative;
+    right: 130px;
+    width: 85px;
+    height: 50px;
+  }
+  section nav ul li{
+    bottom: 3px;
+    margin: 2px;
+    position: relative;
+    right: 225px;
+    display: inline-block;
+    list-style: none;
+  }
+  section nav ul li a{
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+  }
+  section nav ul i{
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  section nav ul i:hover{
+  color: rgb(173, 99, 13);
+  }
+  section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: rgb(173, 99, 13);
+    display: block;
+    transition: 0.2s linear;
+  }
+  section nav ul li a:hover::after{
+    width: 100%;
+  }
+  .Main{
+  position: relative;
+  top: 200px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  }
+  .Main_Text{
+    top: 270px;
+    position: relative;
+    right: 580px;
+  }
+  .Main_Text h1{
+  font-size: 60px;
+  font-family: Calibri;
+  color: rgb(173, 99, 13);
+  }
+  .Main_Text h1 span{
+    font-family: mv boli;
+    color: white;
+  }
+  .Main_Text p{
+    margin-top: 15px;
+    width: 390px;
+    font-size: 15px;
+    color: white;
+    font-family: calibri;
+  }
+  
+  .Main_Text .Main_Button{
+    background-color: rgb(173, 99, 13);
+    width: 150px;
+    position: relative;
+    right: 2px;
+    top: 25px;
+    padding: 12px;
+    border-radius: 25px;
+  }
+  .Main_Text .Main_Button a{
+    margin-left: 2px;
+    font-size: 15px;
+    font-family: sans-serif;
+   text-decoration: none;
+   color: white;
+   margin-right: 5px;
+  }
+  .Main_Text .Main_Button i{
+    color: rgb(23, 23, 23);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .Main_Text .Main_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Main .Main_image img{
+    left: 1px;
+    bottom: 150px;
+    position: relative;
+    width: 400px;
+    margin-right: 200px;
+  }
+  .About{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+  }
+  .About_Text{
+    margin-top: 80px;
+    top: 400px;
+    position: relative;
+    left: 12px;
+  }
+  .About .About_Text h1{
+    font-size: 50px;
+    color: rgb(173, 99, 13);
+    font-family: calibri;
+  }
+  .About .About_Text h1 span{
+    color:  white;
+    font-family: mv boli;
+  }
+  .About .About_Text h3{
+    font-size: 30px;
+    color: rgb(173, 99, 13);
+    font-family: calibri;
+    margin-bottom: 10px;
+  }
+  .About .About_Text p{
+    margin-top: 30px;
+    width: 390px;
+    font-size: 15px;
+    color: white;
+    font-family: calibri;
+  }
+  .About .About_Text .About_Button{
+    background-color: rgb(173, 99, 13);
+    width: 135px;
+    border-radius: 25px;
+    position: relative;
+    top: 20px;
+    padding: 12px;
+  }
+  .About .About_Text .About_Button a{
+    margin-left: 2px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-right: 7px;
+  }
+  .About .About_Text .About_Button i{
+    color: rgb(23, 23, 23);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .About .About_Text .About_Button:hover i{
+    transform: translateX(7px);
+  }
+  .About .About_Image img{
+    bottom: 50px;
+    position: relative;
+    right: 375px;
+    width: 380px;
+  }
+  .Pricing{
+    top: 480px;
+    position: relative;
+    right: 50px;
+    width: 100%;
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .Pricing_Card{
+    background-color: rgb(26, 26, 26);
+    top: 130px;
+    position: relative;
+    left: 50px;
+    height: 600px;
+    width: 135px;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.3s;
+  }
+  .Pricing_Card .Pricing_Info {
+    position: relative; 
+    z-index: 10;
+  }
+  .Pricing_Card .Pricing_Info h2{
+    font-size: 25px;
+    color: rgb(173, 99, 13);
+    font-family: calibri;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .Pricing_Card .Pricing_Info h3{
+    font-style: italic;
+    color:rgb(173, 99, 13);
+    font-size: 20px;
+    font-family: calibri;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .Pricing_Info ul{
+    position: relative;
+    top: 200px;
+  }
+  .Pricing_Card .Pricing_Info ul li{
+    position: relative;
+    align-items: center;
+    font-size: 12px;
+    font-family: calibri;
+    color: rgb(173, 99, 13);
+    list-style-type: style circle;
+    margin-left: 40px;
+  }
+  .Pricing_Card .Pricing_Info .Pricing_Button{
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+    left: 185px;
+    top: 270px;
+    width: 150px;
+    background-color: rgb(173, 99, 13);
+    padding: 12px;
+  }
+  .Pricing_Card .Pricing_Info .Pricing_Button a{
+    margin-left: 2px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: calibri;
+    margin-right: 5px;
+  }
+  .Pricing_Card .Pricing_Info .Pricing_Button i{
+    transition: 0.3s;
+    color: white;
+  }
+  .Pricing_Card .Pricing_Info .Pricing_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Pricing_Card:hover{
+    transform: scale(1.05);
+  }
+  .Pricing_Card1{
+    background-color: rgb(255, 255, 255);
+    top: 130px;
+    position: relative;
+    left: 45px;
+    height: 600px;
+    width: 135px;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.3s;
+  }
+  .Pricing_Card1 .Pricing_Info {
+    position: relative; 
+    z-index: 10;
+  }
+  .Pricing_Card1 .Pricing_Info h2{
+    font-size: 25px;
+    color: rgb(173, 99, 13);
+    font-family: calibri;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .Pricing_Card1 .Pricing_Info h3{
+    font-style: italic;
+    color:rgb(173, 99, 13);
+    font-size: 20px;
+    font-family: calibri;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .Pricing_Info1 ul{
+    position: relative;
+    top: 200px;
+  }
+  .Pricing_Card1 .Pricing_Info ul li{
+    position: relative;
+    top: 80px;
+    align-items: center;
+    font-size: 12px;
+    font-family: calibri;
+    color: rgb(173, 99, 13);
+    margin-left: 30px;
+    list-style-type: style circle;;
+  }
+  .Pricing_Card1 .Pricing_Info .Pricing_Button{
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+    left: 185px;
+    top: 270px;
+    width: 150px;
+    background-color: rgb(173, 99, 13);
+    padding: 12px;
+  }
+  .Pricing_Card1 .Pricing_Info .Pricing_Button a{
+    margin-left: 2px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: calibri;
+    margin-right: 5px;
+  }
+  .Pricing_Card1 .Pricing_Info .Pricing_Button i{
+    transition: 0.3s;
+    color: white;
+  }
+  .Pricing_Card1 .Pricing_Info .Pricing_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Pricing_Card1:hover{
+    transform: scale(1.05);
+  }
+  .Pricing_Card2{
+    background-color: rgb(35, 53, 63);
+    top: 130px;
+    position: relative;
+    left: 37px;
+    height: 600px;
+    width: 135px;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.3s;
+  }
+  .Pricing_Card2 .Pricing_Info {
+    position: relative; 
+    z-index: 10;
+  }
+  .Pricing_Card2 .Pricing_Info h2{
+    font-size: 25px;
+    color: rgb(173, 99, 13);
+    font-family: calibri;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .Pricing_Card2 .Pricing_Info h3{
+    font-style: italic;
+    color: rgb(173, 99, 13);
+    font-size: 20px;
+    font-family: calibri;
+    margin-top: 15px;
+    text-align: center;
+  }
+  .Pricing_Info ul{
+    position: relative;
+    top: 200px;
+  }
+  .Pricing_Card2 .Pricing_Info ul li{
+    position: relative;
+    align-items: center;
+    top: 80px;
+    font-size: 12px;
+    font-family: calibri;
+    color: rgb(173, 99, 13);
+    margin-left: 30px;
+    list-style-type: style circle;
+  }
+  .Pricing_Card2 .Pricing_Info .Pricing_Button{
+    cursor: pointer;
+    position: relative;
+    border-radius: 25px;
+    left: 185px;
+    top: 270px;
+    width: 150px;
+    background-color: rgb(173, 99, 13);
+    padding: 12px;
+  }
+  .Pricing_Card2 .Pricing_Info .Pricing_Button a{
+    margin-left: 2px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: calibri;
+    margin-right: 5px;
+  }
+  .Pricing_Card2 .Pricing_Info .Pricing_Button i{
+    transition: 0.3s;
+    color: white;
+  }
+  .Pricing_Card2 .Pricing_Info .Pricing_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Pricing_Card2:hover{
+    transform: scale(1.05);
+  }
+  .Pricing_Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(FitX_Logo_Claim_pos.png);
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+  }
+  .Membership{
+    position: relative;
+    top: 550px;
+    left: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+  }
+  .Membership_Image img{
+    top: 750px;
+    position: relative;
+    left: 100px;
+    margin-top: 40px;
+    width: 410px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .Membership_Image img:hover{
+    opacity: 0.5;
+  }
+  .Membership_Text{
+    right: 470px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Membership_Text h1{
+    position: relative;
+    top: 140px;
+    left: 170px;
+    font-family: calibri;
+    width: 400px;
+    font-size: 60px;
+    margin-bottom: 150px;
+    color: rgb(173, 99, 13);
+  }
+  .Membership_Text h1 span{
+    color: white;
+    font-family: mv boli;
+  }
+  .Membership_Text input{
+    margin: 10px;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background-color:rgb(173, 99, 13);
+    border: 1px solid rgb(75, 73, 73);
+    border-radius: 10px;
+    color: white;
+    outline: rgb(30, 30, 30);
+  }
+  .Name input{
+    width: 188px;
+  }
+  input::placeholder{
+    color: white;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .Member_Button{
+    position: relative;
+    top: 10px;
+    left: 260px;
+    width: 200px;
+    background-color: rgb(173, 99, 13);
+    padding: 12px;
+    border-color: rgb(23, 23, 23);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .Member_Button a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  .Member_Button i{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+  }
+  .Member_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Training{
+    position: relative;
+    top: 350px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Training_Image img{
+  margin-top: 70px;
+    position: relative;
+    width: 405px;
+    height: 300px;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  .Training_Image img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  .Training_Text{
+  right: 390px;
+  position: relative;
+  top: 440px;
+  }
+  .Stars{
+    position: relative;
+    top: 15px;
+    left: 25px;
+    color: rgb(173, 99, 13);
+  }
+  .Training_Text h1{
+    margin-top: 20px;
+    color: rgb(173, 99, 13);
+    margin-bottom: 20px;
+  font-size: 50px;
+  font-family: calibri;
+  }
+  .Training_Text h1 span{
+    color:white;
+    font-family: mv boli;
+  }
+  .Training_Text p{
+    font-size: 18px;
+    color: white;
+    left: -100px;
+    font-family: calibri;
+    width: 390px;
+  }
+  .Training_Text .Training_Button{
+    top: 30px;
+    position: relative;
+    width: 170px;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: rgb(173, 99, 13);
+  }
+  .Training_Text .Training_Button a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .Training_Text .Training_Button i{
+    transition: 0.3s;
+  }
+  .Training_Text .Training_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Stats{
+    position: relative;
+    top: 40px;
+    left: 10px;
+  }
+  .Stats i{
+    color: rgb(173, 99, 13);
+    margin-top: 3px;
+  }
+  .App{
+    position: relative;
+    top: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .App_Image img{
+    position: relative;
+    width: 400px;
+
+    right: 10px;
+    scale: 1.5;
+  }
+  .App_Text{
+    position: relative;
+    top: 400px;
+    right: 380px;
+  }
+  .App_Text h1{
+    font-size: 50px;
+    font-family: calibri;
+    color: rgb(173, 99, 13);
+    margin-bottom: 20px;
+  }
+  .App_Text h1 span{
+  color: white;
+  font-family: mv boli;
+  }
+  .App_Text p{
+    width: 400px;
+    color: white;
+    font-family: calibri;
+    font-size: 15px;
+  }
+  .App_Button{
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    width: 170px;
+    padding: 12px;
+    background-color: rgb(173, 99, 13);
+  }
+  .App_Button a{
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .App_Button i{
+    transition: 0.3s;
+  }
+  .App_Button:hover i{
+    transform: translateX(7px);
+  }
+  .Impressum{
+    width: 100%;
+    position: relative;
+    top: 1400px;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  }
+  .Über_Fitx{
+    margin-left: 15px;
+    font-size: 15px;
+    color: white;
+  }
+  .Über_Fitx p{
+    color: rgb(173, 99, 13);
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .Über_Fitx ul li{
+    list-style: none;
+    margin-top: 8px;
+  }
+  .Über_Fitx ul li:hover{
+    cursor: pointer;
+    color: rgb(173, 99, 13);
+  }
+  
+  .Kooperationen{
+    margin-left: 15px;
+    position: relative;
+    bottom: 25px;
+    font-size: 15px;
+    color: white;
+  }
+  .Kooperationen p{
+    color: rgb(173, 99, 13);
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .Kooperationen ul li{
+    list-style: none;
+    margin-top: 8px;
+  }
+  .Kooperationen ul li:hover{
+    cursor: pointer;
+    color: rgb(173, 99, 13);
+  }
+  .Support{
+    margin-left: 15px;
+    position: relative;
+    bottom: 28px;
+    font-size: 15px;
+    color: white;
+  }
+  .Support p{
+    color: rgb(173, 99, 13);
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .Support ul li{
+    list-style: none;
+    margin-top: 8px;
+  }
+  .Support ul li:hover{
+    cursor: pointer;
+    color: rgb(173, 99, 13);
+  }
+  
+  .HolApp img{
+    width: 110px;
+    position: relative;
+    left: 15px;
+    bottom: 38px;
+  }
+  .HolApp .fa-solid.fa-star{
+    position: relative;
+    left: 31px;
+    top: -40px;
+    color: rgb(173, 99, 13);
+    font-size: 12px;
+  }
+  .Reviews {
+    position: relative;
+    top: 600px;
+    overflow: hidden;
+    width: 100%;
+    height: 340vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Review_Card {
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 700px;
+    width: 410px;
+    transition: 0.3s;
+    margin-left: -12px;
+    margin-bottom: 30px; /* Add margin between cards */
+  }
+  .Reviews_Title{
+    position: relative;
+    top: 750px;
+    font-family: calibri;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(173, 99, 13);
+  }
+  .Review_Image img{
+    top: 20px;
+    height: 380px;
+    width: 400px;
+    position: relative;
+    left: 3px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  .Review_Card:hover img{
+    transform: scale(1.02);
+    opacity: 0.6;
+  }
+  .Review_Card:hover {
+    box-shadow: 0 0 10px black;
+  }
+  .Review_Text p{
+    margin-left: 4px;
+    margin-top: 40px;
+  width: 420px;
+  font-size: 20px;
+  font-family: calibri;
+  color: white;
+  }
+  .Review_Text .fa-solid.fa-star{
+    position: relative;
+    top: 15px;
+    color:rgb(173, 99, 13);
+  }
+  .Review_Text .fa-solid.fa-star-half-stroke{
+    position: relative;
+    top: 15px;
+    color:rgb(173, 99, 13);
+  }
+  .Review_Text .fa-solid.fa-thumbs-up{
+    color:rgb(173, 99, 13);
+    position: relative;
+    bottom: 245px;
+    font-size: 20px;
+    right: 106px;
+    transition: 0.1s;
+  }
+  .Review_Text .fa-solid.fa-thumbs-up:hover{
+   transform: scale(1.07);
+  }
+  .Review_Text .fa-solid.fa-thumbs-down{
+    transition: 0.1s;
+    color:rgb(173, 99, 13);
+    position: relative;
+    bottom: 245px;
+    font-size: 20px;
+    right: 100px;
+  }
+  .Review_Text .fa-solid.fa-thumbs-down:hover{
+    transform: scale(1.07);
+   }
+  
+ }
